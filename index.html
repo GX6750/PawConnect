@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PawConnect | Adopsi, Pet Care, Penitipan, Forum</title>
+    <meta
+      name="description"
+      content="PawConnect membantu pet owner mengadopsi, menitipkan, merawat, dan berdiskusi dalam satu website."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="PawConnect">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M25.2 28.8c4.1-1.4 9.5-1.4 13.6 0 7.2 2.5 13.9 12.6 10.7 18.8-2.8 5.5-10.2 3.8-17.5 3.8s-14.7 1.7-17.5-3.8c-3.2-6.2 3.5-16.3 10.7-18.8Z" />
+            <path d="M18.1 26.8c-3.5.8-7-2.6-7.8-7.4-.8-4.9 1.3-9.4 4.8-10.2 3.5-.7 7 2.6 7.8 7.5.8 4.8-1.3 9.4-4.8 10.1Z" />
+            <path d="M30.1 22.5c-3.7.3-6.9-3.6-7.2-8.7-.4-5.1 2.3-9.5 6-9.8 3.7-.3 6.9 3.6 7.2 8.7.4 5.1-2.3 9.5-6 9.8Z" />
+            <path d="M45.9 26.8c3.5.8 7-2.6 7.8-7.4.8-4.9-1.3-9.4-4.8-10.2-3.5-.7-7 2.6-7.8 7.5-.8 4.8 1.3 9.4 4.8 10.1Z" />
+            <path d="M38.8 23.5c3.5.8 7-2.5 7.8-7.2.8-4.8-1.3-9.2-4.8-10-3.5-.7-7 2.5-7.8 7.3-.8 4.7 1.3 9.2 4.8 9.9Z" />
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>PawConnect</strong>
+          <small>Adopsi dan pet care</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#adoption">Adopsi</a>
+        <a href="#services">Penitipan & Pet Care</a>
+        <a href="#locations">Maps Toko</a>
+        <a href="#forum">Forum</a>
+      </nav>
+
+      <a class="btn btn-small btn-dark" href="#give-pet">Daftarkan Hewan</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="PawConnect">
+        <div class="hero-content">
+          <p class="eyebrow">Adopsi, penitipan, pet care, forum pet owner</p>
+          <h1>PawConnect</h1>
+          <p class="hero-lede">
+            Satu rumah digital untuk menemukan keluarga baru bagi hewan, memesan perawatan, mencari cabang terdekat, dan ngobrol dengan sesama pencinta hewan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#adoption">Cari Hewan Adopsi</a>
+            <a class="btn btn-light" href="#services">Pesan Pet Care</a>
+          </div>
+
+          <form class="hero-search" id="heroSearch" aria-label="Cari hewan adopsi cepat">
+            <label for="quickSearch">Cari adopsi</label>
+            <input id="quickSearch" type="search" placeholder="Nama, ras, lokasi" />
+            <select id="quickSpecies" aria-label="Jenis hewan">
+              <option value="Semua">Semua hewan</option>
+              <option value="Kucing">Kucing</option>
+              <option value="Anjing">Anjing</option>
+              <option value="Kelinci">Kelinci</option>
+              <option value="Burung">Burung</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Cari</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="metrics-band" aria-label="Ringkasan PawConnect">
+        <div class="metric">
+          <strong>128</strong>
+          <span>hewan terbantu</span>
+        </div>
+        <div class="metric">
+          <strong>7</strong>
+          <span>cabang Jabodetabek</span>
+        </div>
+        <div class="metric">
+          <strong>24 jam</strong>
+          <span>chat pemilik aktif</span>
+        </div>
+        <div class="metric">
+          <strong>4.9/5</strong>
+          <span>rating layanan</span>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="adoption">
+        <div class="section-head">
+          <p class="eyebrow">Adopsi hewan</p>
+          <h2>Temukan teman hidup baru</h2>
+          <p>
+            Lihat detail jenis hewan, ras, umur, karakter, kondisi kesehatan, dan kontak pemilik yang bisa ditelepon atau dihubungi lewat chat website.
+          </p>
+        </div>
+
+        <div class="filter-bar" aria-label="Filter hewan adopsi">
+          <div class="chip-group" role="group" aria-label="Jenis hewan">
+            <button class="filter-chip is-active" type="button" data-species="Semua">Semua</button>
+            <button class="filter-chip" type="button" data-species="Kucing">Kucing</button>
+            <button class="filter-chip" type="button" data-species="Anjing">Anjing</button>
+            <button class="filter-chip" type="button" data-species="Kelinci">Kelinci</button>
+            <button class="filter-chip" type="button" data-species="Burung">Burung</button>
+          </div>
+          <label class="select-wrap" for="locationFilter">
+            <span>Lokasi</span>
+            <select id="locationFilter">
+              <option value="Semua">Semua lokasi</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Depok">Depok</option>
+              <option value="Tangerang">Tangerang</option>
+              <option value="Bekasi">Bekasi</option>
+              <option value="Bogor">Bogor</option>
+            </select>
+          </label>
+          <label class="search-wrap" for="adoptionSearch">
+            <span>Cari</span>
+            <input id="adoptionSearch" type="search" placeholder="Nama, ras, umur, pemilik" />
+          </label>
+        </div>
+
+        <div class="pet-grid" id="petGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section split-section" id="give-pet">
+        <div class="section-head compact-head">
+          <p class="eyebrow">Berikan untuk diadopsi</p>
+          <h2>Daftarkan hewan yang membutuhkan keluarga baru</h2>
+          <p>
+            Data pemilik akan tampil di detail hewan supaya calon adopter bisa menghubungi dengan jelas dan bertanggung jawab.
+          </p>
+        </div>
+
+        <form class="panel form-panel" id="listPetForm">
+          <div class="form-grid">
+            <label>
+              Nama hewan
+              <input name="name" type="text" placeholder="Contoh: Luna" required />
+            </label>
+            <label>
+              Jenis hewan
+              <select name="species" required>
+                <option value="">Pilih jenis</option>
+                <option>Kucing</option>
+                <option>Anjing</option>
+                <option>Kelinci</option>
+                <option>Burung</option>
+                <option>Hamster</option>
+                <option>Lainnya</option>
+              </select>
+            </label>
+            <label>
+              Ras
+              <input name="breed" type="text" placeholder="Domestic, Golden, Persian" required />
+            </label>
+            <label>
+              Umur
+              <input name="age" type="text" placeholder="2 tahun" required />
+            </label>
+            <label>
+              Jenis kelamin
+              <select name="gender" required>
+                <option value="">Pilih</option>
+                <option>Jantan</option>
+                <option>Betina</option>
+              </select>
+            </label>
+            <label>
+              Lokasi
+              <input name="location" type="text" placeholder="Jakarta Selatan" required />
+            </label>
+            <label>
+              Nama pemilik
+              <input name="ownerName" type="text" placeholder="Nama lengkap" required />
+            </label>
+            <label>
+              Nomor telepon
+              <input name="phone" type="tel" placeholder="08xxxxxxxxxx" required />
+            </label>
+            <label class="wide">
+              Foto hewan
+              <input name="photo" type="file" accept="image/*" />
+            </label>
+            <label class="wide">
+              Deskripsi
+              <textarea name="description" rows="4" placeholder="Ceritakan karakter, riwayat kesehatan, kebiasaan, dan adopter yang cocok" required></textarea>
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Publikasikan Hewan</button>
+        </form>
+      </section>
+
+      <section class="section section-care" id="services">
+        <div class="section-head">
+          <p class="eyebrow">Penitipan & Pet Care</p>
+          <h2>Pesan layanan untuk hewan kesayangan</h2>
+          <p>
+            Isi detail hewan, foto, lokasi, alamat, dan nomor telepon. Tim akan menghubungi untuk konfirmasi, jadwal pick up penitipan, atau kunjungan pet care ke rumah.
+          </p>
+        </div>
+
+        <div class="service-tabs" role="tablist" aria-label="Jenis layanan">
+          <button class="service-tab is-active" type="button" data-service="Penitipan">Penitipan</button>
+          <button class="service-tab" type="button" data-service="Pet Care Visit">Pet Care Visit</button>
+          <button class="service-tab" type="button" data-service="Grooming">Grooming</button>
+          <button class="service-tab" type="button" data-service="Vaksin & Check Up">Vaksin & Check Up</button>
+        </div>
+
+        <div class="service-layout">
+          <form class="panel service-form" id="serviceForm">
+            <input type="hidden" name="service" id="serviceType" value="Penitipan" />
+            <div class="form-grid">
+              <label>
+                Nama hewan
+                <input name="petName" type="text" placeholder="Milo" required />
+              </label>
+              <label>
+                Jenis hewan
+                <select name="species" required>
+                  <option value="">Pilih jenis</option>
+                  <option>Kucing</option>
+                  <option>Anjing</option>
+                  <option>Kelinci</option>
+                  <option>Burung</option>
+                  <option>Lainnya</option>
+                </select>
+              </label>
+              <label>
+                Ras
+                <input name="breed" type="text" placeholder="Persian, Pomeranian, lokal" required />
+              </label>
+              <label>
+                Umur
+                <input name="age" type="text" placeholder="1 tahun" required />
+              </label>
+              <label>
+                Berat
+                <input name="weight" type="text" placeholder="4 kg" />
+              </label>
+              <label>
+                Tanggal layanan
+                <input name="date" type="date" required />
+              </label>
+              <label>
+                Area
+                <select name="area" required>
+                  <option value="">Pilih area</option>
+                  <option>Jakarta Pusat</option>
+                  <option>Jakarta Selatan</option>
+                  <option>Jakarta Barat</option>
+                  <option>Jakarta Utara</option>
+                  <option>Jakarta Timur</option>
+                  <option>Depok</option>
+                  <option>Tangerang</option>
+                  <option>Bekasi</option>
+                  <option>Bogor</option>
+                </select>
+              </label>
+              <label>
+                Nomor telepon
+                <input name="phone" type="tel" placeholder="08xxxxxxxxxx" required />
+              </label>
+              <label class="wide">
+                Alamat lengkap
+                <textarea name="address" rows="3" placeholder="Nama jalan, nomor rumah, patokan, kecamatan" required></textarea>
+              </label>
+              <label class="wide">
+                Foto hewan
+                <input id="servicePhoto" name="photo" type="file" accept="image/*" />
+              </label>
+              <label class="wide">
+                Catatan
+                <textarea name="notes" rows="3" placeholder="Alergi, obat rutin, karakter, jam terbaik dihubungi"></textarea>
+              </label>
+            </div>
+
+            <div class="service-options">
+              <label class="toggle-line">
+                <input name="pickup" type="checkbox" checked />
+                <span>Butuh pick up atau kunjungan langsung</span>
+              </label>
+              <span id="photoPreview" class="file-note">Belum ada foto dipilih</span>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Kirim Pesanan</button>
+          </form>
+
+          <aside class="service-note" aria-label="Status pesanan">
+            <h3>Alur konfirmasi</h3>
+            <ol>
+              <li>Tim menerima data hewan dan lokasi.</li>
+              <li>Tim menghubungi nomor telepon untuk validasi jadwal.</li>
+              <li>Penitipan dijemput, pet care datang ke rumah, atau layanan dilakukan di cabang.</li>
+            </ol>
+            <div class="service-summary" id="serviceSummary" hidden></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="locations">
+        <div class="section-head">
+          <p class="eyebrow">Maps toko</p>
+          <h2>Cabang sekitar Jabodetabek</h2>
+          <p>
+            Lokasi cabang ini masih data contoh, tersebar acak di area Jakarta, Bogor, Depok, Tangerang, dan Bekasi untuk simulasi operasional awal.
+          </p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual" id="branchMap" aria-label="Peta cabang PawConnect">
+            <span class="map-label north">Jakarta Utara</span>
+            <span class="map-label west">Tangerang</span>
+            <span class="map-label center">Jakarta</span>
+            <span class="map-label east">Bekasi</span>
+            <span class="map-label south">Bogor</span>
+            <span class="map-road road-one"></span>
+            <span class="map-road road-two"></span>
+            <span class="map-road road-three"></span>
+          </div>
+
+          <aside class="branch-panel" id="branchPanel" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section class="section section-forum" id="forum">
+        <div class="section-head">
+          <p class="eyebrow">Forum pet owner</p>
+          <h2>Ruang ngobrol pencinta hewan</h2>
+          <p>
+            Pet owner bisa berbagi cerita, bertanya soal perawatan, mencari rekomendasi, atau menyapa komunitas yang punya pengalaman serupa.
+          </p>
+        </div>
+
+        <div class="forum-layout">
+          <form class="panel forum-form" id="forumForm">
+            <label>
+              Nama
+              <input name="author" type="text" placeholder="Nama kamu" required />
+            </label>
+            <label>
+              Kota
+              <input name="city" type="text" placeholder="Jakarta, Depok, Bekasi" required />
+            </label>
+            <label>
+              Topik
+              <select name="topic" required>
+                <option>Adopsi</option>
+                <option>Pet Care</option>
+                <option>Penitipan</option>
+                <option>Cerita Harian</option>
+              </select>
+            </label>
+            <label>
+              Judul
+              <input name="title" type="text" placeholder="Judul diskusi" required />
+            </label>
+            <label>
+              Cerita atau pertanyaan
+              <textarea name="body" rows="5" placeholder="Tulis obrolan kamu di sini" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Posting Forum</button>
+          </form>
+
+          <div class="forum-stream">
+            <div class="forum-filter" role="group" aria-label="Filter forum">
+              <button class="forum-filter-btn is-active" type="button" data-topic="Semua">Semua</button>
+              <button class="forum-filter-btn" type="button" data-topic="Adopsi">Adopsi</button>
+              <button class="forum-filter-btn" type="button" data-topic="Pet Care">Pet Care</button>
+              <button class="forum-filter-btn" type="button" data-topic="Penitipan">Penitipan</button>
+              <button class="forum-filter-btn" type="button" data-topic="Cerita Harian">Cerita Harian</button>
+            </div>
+            <div id="forumPosts" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>PawConnect</strong>
+        <p>Platform contoh untuk adopsi hewan, penitipan, pet care, maps toko, dan forum pet owner.</p>
+      </div>
+      <a class="btn btn-light" href="#home">Kembali ke atas</a>
+    </footer>
+
+    <div class="modal" id="petModal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="icon-button modal-close" type="button" data-close-modal aria-label="Tutup detail">x</button>
+        <div id="modalContent"></div>
+      </article>
+    </div>
+
+    <aside class="chat-drawer" id="chatDrawer" aria-label="Chat website" hidden>
+      <div class="chat-head">
+        <div>
+          <span class="eyebrow">Chat website</span>
+          <h3 id="chatTitle">Pemilik hewan</h3>
+        </div>
+        <button class="icon-button" id="closeChat" type="button" aria-label="Tutup chat">x</button>
+      </div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+      <form class="chat-form" id="chatForm">
+        <input id="chatInput" type="text" placeholder="Tulis pesan" required />
+        <button class="btn btn-primary" type="submit">Kirim</button>
+      </form>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
